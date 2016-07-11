@@ -181,6 +181,21 @@ Step 2 - 6: Calculate the date for each rank
 
 ## Step 3: Visualize
 
+### Useful Insights for record companies:
+#### What to produce:
+* should produce and promote more Rock, Rap and Country genre
+* should produce songs with length of about 220 to 260 seconds
+#### Where and when to spend marketing dollar:
+* while Rock dominates over Rap and Country, top Rap and Country artists fare as well as top Rock artists. While overall marketing dollar should be spent proportionately more on Rock, the spending per top artist across Country, Rap and Country should not differ as significantly.
+* artist with the most # of BB songs may not be the most influential (e.g. Jay-z). A few artists might have fewer BB songs (2-3), but each of them rank higher, and stays longer on the BB.
+* How should I pace my marketing effort? How can I estimate how high the ranking can be and how long it can stay on billboard?
+* a top song could take as long as 25-45 weeks to reach the peak, and 20-30 weeks to fall out of 50.
+* the longer a top 40 songs takes to reach the peak, the longer it takes to fall out of 50.
+* sometimes a song fall out of the chart and come back in. out of 317 songs, 15 did fall out of the chart and came back in. only 2 made it to top 10, 3 to top 20. if your song fall out of the chart, odd of it being a top rank song is slim.
+* dedicate effort especially closer to the 20th week. If it ranks below 50, it'd get kicked out.
+* Is week 1's performance indicative of the song's best ranking? Should record company manipulate the release time in order to achieve higher ultimate ranking? data shows that top 10 BB songs had w1 ranking of 15 to 100. A w1 ranking of 100 does not forestall the song from an ultimate high rank. But if w1 rank is already top 50, there's good chance it'll be a top 20 song.
+* Week 1's performance is not correlated with number of weeks the song stays on billboard.
+
 ## Step 4: Problem Statement
 
 From the perspective of a record company, with the goal of producing more BillBoard hit songs:
@@ -206,17 +221,17 @@ Observe seasonality over multiple years, e.g. is the rising % of Reggae in Oct -
 Gather more descriptive data on the songs, e.g.
 * gender of artist
 * race of artist
-*group vs solo
-*theme
-*tempo (speed)
-*mood (quantifiable: major vs minor tune, music range (highest minus lowest pitch) and frequency)
-*song writer
-*lyricist
-*record company
-*marketing budget per song
-*is it a theme song for a major event / hot movie
-*split in revenue from online purchase vs offline purchase
-*split in radio airtime vs online streaming/youtube viewing (Should be able to purchase from Nielsen SoundScan, or cross reference BillBoard's "On-demand Songs" chart)
+* group vs solo
+* theme
+* tempo (speed)
+* mood (quantifiable: major vs minor tune, music range (highest minus lowest pitch) and frequency)
+* song writer
+* lyricist
+* record company
+* marketing budget per song
+* is it a theme song for a major event / hot movie
+* split in revenue from online purchase vs offline purchase
+* split in radio airtime vs online streaming/youtube viewing (Should be able to purchase from Nielsen SoundScan, or cross reference BillBoard's "On-demand Songs" chart)
 
 With more descriptive data and over longer time horizon, we can produce more and also spend more marketing dollars on songs that share those hit characteristics.
 
@@ -225,15 +240,15 @@ We should also repeat the study of week to peak, peak to last, and billboard dur
 Knowing where certain types of songs are more popular on which channel, helps us to do target advertising. If certain type of song by certain artists are mostly getting "airplay" online, marketing dollar should be spend online, e.g. buying more ad on itunes. Certain songs might still be a "radio" type of songs, then more effort should be put on marketing to DJs.
 
 ##### Caveat while doing time-series analysis on Billboard Hot 100
-Weighting methodology had been changing over time to adapt to new environment in music industry, e.g. inclusion of various online channels
-The chart is subjective: BillBoard has adjusted the sales/airtime ratio many times to more accurately reflect "the true popularity of songs"
-The Chart had been subject to manipulation, e.g. 1991 SoundScan scandal.
+* Weighting methodology had been changing over time to adapt to new environment in music industry, e.g. inclusion of various online channels
+* The chart is subjective: BillBoard has adjusted the sales/airtime ratio many times to more accurately reflect "the true popularity of songs"
+* The Chart had been subject to manipulation, e.g. 1991 SoundScan scandal.
 High ranking does not necessarily means high revenue.
 
 ##### Side Note - methodology changes
-pre 1995: singles were allowed to chart in the week they first went on sale, and chart based on airplay points alone
-post 1995: only allow a single to debut after a full week of sales on combined sales and airplay points
-1998: allow tracks to chart on the basis of airplay alone without commercial release
-2005: include paid digital downloads tracked by Nielson SoundScan
-2007: include digital streams
-2012: add on-demand songs services (Spotify)
+* pre 1995: singles were allowed to chart in the week they first went on sale, and chart based on airplay points alone
+* post 1995: only allow a single to debut after a full week of sales on combined sales and airplay points
+* 1998: allow tracks to chart on the basis of airplay alone without commercial release
+* 2005: include paid digital downloads tracked by Nielson SoundScan
+* 2007: include digital streams
+* 2012: add on-demand songs services (Spotify)
