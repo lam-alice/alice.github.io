@@ -32,7 +32,107 @@ descending songs are removed from the chart if rank below number 25 after 52 wee
 exceptions made to re-releases, sudden resurgence in popularity of tracks that have taken a very long time to gain mainstream success. These are rare and handled on case-by-case basis
 
 Step 1 - 1
+
 df.info()
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 317 entries, 0 to 316
+Data columns (total 83 columns):
+year               317 non-null int64
+artist.inverted    317 non-null object
+track              317 non-null object
+time               317 non-null object
+genre              317 non-null object
+date.entered       317 non-null object
+date.peaked        317 non-null object
+x1st.week          317 non-null int64
+x2nd.week          312 non-null float64
+x3rd.week          307 non-null float64
+x4th.week          300 non-null float64
+x5th.week          292 non-null float64
+x6th.week          280 non-null float64
+x7th.week          269 non-null float64
+x8th.week          260 non-null float64
+x9th.week          253 non-null float64
+x10th.week         244 non-null float64
+x11th.week         236 non-null float64
+x12th.week         222 non-null float64
+x13th.week         210 non-null float64
+x14th.week         204 non-null float64
+x15th.week         197 non-null float64
+x16th.week         182 non-null float64
+x17th.week         177 non-null float64
+x18th.week         166 non-null float64
+x19th.week         156 non-null float64
+x20th.week         146 non-null float64
+x21st.week         65 non-null float64
+x22nd.week         55 non-null float64
+x23rd.week         48 non-null float64
+x24th.week         46 non-null float64
+x25th.week         38 non-null float64
+x26th.week         36 non-null float64
+x27th.week         29 non-null float64
+x28th.week         24 non-null float64
+x29th.week         20 non-null float64
+x30th.week         20 non-null float64
+x31st.week         19 non-null float64
+x32nd.week         18 non-null float64
+x33rd.week         12 non-null float64
+x34th.week         10 non-null float64
+x35th.week         9 non-null float64
+x36th.week         9 non-null float64
+x37th.week         9 non-null float64
+x38th.week         8 non-null float64
+x39th.week         8 non-null float64
+x40th.week         7 non-null float64
+x41st.week         7 non-null float64
+x42nd.week         6 non-null float64
+x43rd.week         6 non-null float64
+x44th.week         6 non-null float64
+x45th.week         5 non-null float64
+x46th.week         5 non-null float64
+x47th.week         5 non-null float64
+x48th.week         4 non-null float64
+x49th.week         4 non-null float64
+x50th.week         4 non-null float64
+x51st.week         4 non-null float64
+x52nd.week         4 non-null float64
+x53rd.week         4 non-null float64
+x54th.week         2 non-null float64
+x55th.week         2 non-null float64
+x56th.week         2 non-null float64
+x57th.week         2 non-null float64
+x58th.week         2 non-null float64
+x59th.week         2 non-null float64
+x60th.week         2 non-null float64
+x61st.week         2 non-null float64
+x62nd.week         2 non-null float64
+x63rd.week         2 non-null float64
+x64th.week         2 non-null float64
+x65th.week         1 non-null float64
+x66th.week         0 non-null float64
+x67th.week         0 non-null float64
+x68th.week         0 non-null float64
+x69th.week         0 non-null float64
+x70th.week         0 non-null float64
+x71st.week         0 non-null float64
+x72nd.week         0 non-null float64
+x73rd.week         0 non-null float64
+x74th.week         0 non-null float64
+x75th.week         0 non-null float64
+x76th.week         0 non-null float64
+dtypes: float64(75), int64(2), object(6)
+memory usage: 205.6+ KB
+
+Step 1 - 2: rename columns
+
+Step 1 - 3: check data in key columns
+artist and genre data are fine, but there's a duplicate songs by two different artist. we rename the songs to differentiate the two.
+
+## Step 2: Modify data for analysis
+
+Step 2 - 1: calculate length of track in seconds
+
+Step 2 - 2: 
 
 Step 3: Visualize
 
