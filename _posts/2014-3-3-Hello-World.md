@@ -196,6 +196,19 @@ Step 2 - 6: Calculate the date for each rank
 * Is week 1's performance indicative of the song's best ranking? Should record company manipulate the release time in order to achieve higher ultimate ranking? data shows that top 10 BB songs had w1 ranking of 15 to 100. A w1 ranking of 100 does not forestall the song from an ultimate high rank. But if w1 rank is already top 50, there's good chance it'll be a top 20 song.
 * Week 1's performance is not correlated with number of weeks the song stays on billboard.
 
+# ![](https://raw.githubusercontent.com/lam-alice/lam-alice.github.io/master/1.png)
+# ![](https://raw.githubusercontent.com/lam-alice/lam-alice.github.io/master/2.png)
+# ![](https://raw.githubusercontent.com/lam-alice/lam-alice.github.io/master/3.png)
+# ![](https://raw.githubusercontent.com/lam-alice/lam-alice.github.io/master/4.png)
+# ![](https://raw.githubusercontent.com/lam-alice/lam-alice.github.io/master/5.png)
+# ![](https://raw.githubusercontent.com/lam-alice/lam-alice.github.io/master/6.png)
+# ![](https://raw.githubusercontent.com/lam-alice/lam-alice.github.io/master/7.png)
+# ![](https://raw.githubusercontent.com/lam-alice/lam-alice.github.io/master/9.png)
+# ![](https://raw.githubusercontent.com/lam-alice/lam-alice.github.io/master/10.png)
+# ![](https://raw.githubusercontent.com/lam-alice/lam-alice.github.io/master/11.png)
+# ![](https://raw.githubusercontent.com/lam-alice/lam-alice.github.io/master/12.png)
+# ![](https://raw.githubusercontent.com/lam-alice/lam-alice.github.io/master/13.png)
+
 ## Step 4: Problem Statement
 
 From the perspective of a record company, with the goal of producing more BillBoard hit songs:
