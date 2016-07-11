@@ -7,7 +7,7 @@ published: true
 
 ## Alice Lam's GA Project 2 - Billboard data
 
-Step 1: Explore and describe data
+### Step 1: Explore and describe data
 
 Step 1 & 2: describe data, interesting observation; clean data along the way
 - Total 317 entries, info shows that year, artist, track, time, genre, date entered, date peaked, 1st week, all have data and non-null.
@@ -21,7 +21,7 @@ Step 1 & 2: describe data, interesting observation; clean data along the way
 - Number of weeks on BB: average 16.7 weeks, 25th to 75th percentile range from 10 wk to 20 wk, max 57 wks.
 - Some data appear missing. While sorting according to time, at any given date, there is less than 100 ranked song
 
-Qualitative description of the data
+#### Qualitative description of the data
 Ranking factors: (airplay by ~1000 stations: approx. by # of gross audience impressions, cross-reference exact times of radio airplay), (physical sales), (digital sales), (top streamed songs on radio, on-demand, videos on leading online music services)
 intention:
 aid the industry to know the popularity of the “product” and to track the trends of the buying public
