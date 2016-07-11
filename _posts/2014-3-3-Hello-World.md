@@ -174,10 +174,66 @@ Step 2 - 5: melt the week rank data
                       
                       
 
-Step 3: Visualize
+Step 2 - 6: Calculate the date for each rank
+                  df_week_melt['date'] = 
+                  (df_week_melt['wk_num']-1) * 7 * 60 * 60 * 24 * 1000000000 + df_week_melt['date_entered']
+                  # week number need to minus 1, as week 1 = date_entered
 
-Step 4: Problem Statement
+## Step 3: Visualize
 
-Step 5: Approach
+## Step 4: Problem Statement
 
-Step 7: What it means to have clean data
+From the perspective of a record company, with the goal of producing more BillBoard hit songs:
+
+How to deepen understanding on what drives a song to be popular, and the trends of the drivers?
+
+What type of songs should we produce more?
+
+When should the song be released?
+
+For how long should we market heavily on the song?
+
+Where should we market the song?
+
+Are there popular and very popular songs that would be overlooked by this billboard?
+
+## Step 5: Approach for problem statement
+
+Track longer time period, observe longer time trend
+
+Observe seasonality over multiple years, e.g. is the rising % of Reggae in Oct - Dec 2000 a Q4 seasonality thing?
+
+Gather more descriptive data on the songs, e.g.
+* gender of artist
+* race of artist
+*group vs solo
+*theme
+*tempo (speed)
+*mood (quantifiable: major vs minor tune, music range (highest minus lowest pitch) and frequency)
+*song writer
+*lyricist
+*record company
+*marketing budget per song
+*is it a theme song for a major event / hot movie
+*split in revenue from online purchase vs offline purchase
+*split in radio airtime vs online streaming/youtube viewing (Should be able to purchase from Nielsen SoundScan, or cross reference BillBoard's "On-demand Songs" chart)
+
+With more descriptive data and over longer time horizon, we can produce more and also spend more marketing dollars on songs that share those hit characteristics.
+
+We should also repeat the study of week to peak, peak to last, and billboard duration, to further our statistical studies on how long it takes for each type of songs to ramp up the rank and stay on the chart. We should focus on our marketing dollar during those weeks.
+
+Knowing where certain types of songs are more popular on which channel, helps us to do target advertising. If certain type of song by certain artists are mostly getting "airplay" online, marketing dollar should be spend online, e.g. buying more ad on itunes. Certain songs might still be a "radio" type of songs, then more effort should be put on marketing to DJs.
+
+##### Caveat while doing time-series analysis on Billboard Hot 100
+Weighting methodology had been changing over time to adapt to new environment in music industry, e.g. inclusion of various online channels
+The chart is subjective: BillBoard has adjusted the sales/airtime ratio many times to more accurately reflect "the true popularity of songs"
+The Chart had been subject to manipulation, e.g. 1991 SoundScan scandal.
+High ranking does not necessarily means high revenue.
+
+##### Side Note - methodology changes
+pre 1995: singles were allowed to chart in the week they first went on sale, and chart based on airplay points alone
+post 1995: only allow a single to debut after a full week of sales on combined sales and airplay points
+1998: allow tracks to chart on the basis of airplay alone without commercial release
+2005: include paid digital downloads tracked by Nielson SoundScan
+2007: include digital streams
+2012: add on-demand songs services (Spotify)
