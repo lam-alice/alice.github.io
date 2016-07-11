@@ -33,7 +33,8 @@ exceptions made to re-releases, sudden resurgence in popularity of tracks that h
 
 Step 1 - 1
 
-df.info()
+      df.info()
+
 <class 'pandas.core.frame.DataFrame'>
 RangeIndex: 317 entries, 0 to 316
 Data columns (total 83 columns):
@@ -132,7 +133,46 @@ artist and genre data are fine, but there's a duplicate songs by two different a
 
 Step 2 - 1: calculate length of track in seconds
 
-Step 2 - 2: 
+Step 2 - 2: calculate time it takes to peak and to fade
+Code:
+
+convert to datetime type
+
+      df_ed.date_entered = pd.to_datetime(df.date_entered)
+      df_ed.date_peaked = pd.to_datetime(df.date_peaked)
+
+calculate number of weeks to peak
+timedelta in unit of microseconds
+
+      days_to_peak = pd.to_numeric((df_ed.date_peaked - df_ed.date_entered)/60/60/24/1000000000)
+      weeks_to_peak = pd.DataFrame((days_to_peak) / 7)
+      weeks_to_peak.columns = ['wks_to_peak']
+      df_ed = pd.concat([df_ed,weeks_to_peak], axis=1)
+      df_ed.head()
+
+Step 2 - 3: create week/rank only data frame to calculate number of weeks on billbaords, the week it last show up on BB
+
+Step 2 - 4: find the best and worst ranking per track
+
+Step 2 - 5: melt the week rank data
+
+      df_week_melt = pd.melt(df_ed, 
+                             id_vars = ['artist','track','genre','date_entered','date_peaked',
+                                        'track_len','wks_to_peak','wk_last_appeared','wks_on_bb',
+                                        'miss_wk','wks_peak_to_out','bb_best_rank','bb_worst_rank'], 
+                             var_name = ['wk'],
+                             value_vars = ['w01','w02','w03','w04','w05','w06','w07','w08','w09',
+                                           'w10','w11','w12','w13','w14','w15','w16','w17','w18',
+                                           'w19','w20','w21','w22','w23','w24','w25','w26','w27',
+                                            'w28','w29','w30','w31','w32','w33','w34','w35','w36',
+                                           'w37','w38','w39','w40','w41','w42','w43','w44','w45',
+                                           'w46','w47','w48','w49','w50','w51','w52','w53','w54',
+                                           'w55','w56','w57','w58','w59','w60','w61','w62','w63',
+                                           'w64','w65','w66','w67','w68','w69','w70','w71','w72',
+                                           'w73','w74','w75','w76'],
+                            value_name = 'rank')
+                      
+                      
 
 Step 3: Visualize
 
